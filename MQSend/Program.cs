@@ -23,6 +23,7 @@ namespace MQSend
                 Send.Queue(factory);
             });
 
+            task.Start();
             Task.WaitAll(task);
             Console.WriteLine("Press [enter] to exit");
             Console.ReadLine();
